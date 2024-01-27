@@ -3,6 +3,7 @@
   <head>
     <title>Website</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
   </head>
 
   <body>
@@ -53,7 +54,7 @@
     </div>
     <!-- end slider -->
     <!-- start contact -->
-    <section class="py-6 bg-grey-800 dark:text-black-50 bg-zinc-200">
+    <section class="py-6 bg-white dark:text-black">
       <div class="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-1 md:divide-x">
         <div class="py-6 md:py-0 md:px-6">
           <h1 class="text-4xl text-center">Get in touch</h1>
@@ -61,105 +62,322 @@
         </div>
         <form novalidate="" class="flex flex-row py-6 md:py-0 md:px-40">
           <label class="block px-4" >
-            <input type="text" placeholder="Enter Name" class="block w-full rounded-md shadow-sm focus:ring focus:ri light:bg-gray-800 border-2 focus:ri">
+            <input type="text" placeholder="Enter Name" class="block w-full rounded-md bg-white border-2" required>
           </label>
           <label class="block px-4">
-            <input type="email" placeholder="Email" class="block w-full rounded-md shadow-sm focus:ring focus:ri light:bg-gray-800 border-2 focus:ri">
+            <input type="email" placeholder="Email" class="block w-full rounded-md bg-white border-2" required>
           </label>
           <label class="block px-4">
-            <input type="number" placeholder="Mobile No." class="block w-full rounded-md shadow-sm focus:ring focus:ri light:bg-gray-800 border-2 focus:ri">
+            <input type="number" placeholder="Mobile No." class="block w-full rounded-md bg-white border-2" required>
           </label>
-          <button type="button" class="self-center px-8 py-1 text-lg rounded focus:ring hover:ring focus:ri light:text-gray-900 dark:bg-cyan-400 focus:ri hover:ri">Submit</button>
+          <button type="button" class="self-center px-8 py-1 text-lg rounded focus:ring hover:ring focus:ri light:text-gray-900 dark:bg-cyan-400">Submit</button>
         </form>
       </div>
     </section>
     <!-- end contact -->
     <!-- start section -->
-    <div class="section bg-gray-100 px-60 py-4">
-      <h1 class="h4 py-5 text-cyan-500 italic text-lg text-center">A New-Age, Technology-Driven Publisher Catering to Authors Worldwide</h1>
-      <iframe width="700" height="400" src="https://www.youtube.com/embed/sQRjmP0PhPM" title="White Falcon Publishing - New-Age, Technology-Driven Publisher" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="section bg-gray-200 px-60 py-4">
+      <h1 class="h4 py-5 text-cyan-500 italic text-lg text-center"><a href="#">A New-Age, Technology-Driven Publisher Catering to Authors Worldwide</a></h1>
+      <iframe width="500" height="400" src="https://www.youtube.com/embed/sQRjmP0PhPM" title="White Falcon Publishing - New-Age, Technology-Driven Publisher" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
     <!-- end section -->
-    <!-- start card -->
-    <div class="section bg-gray-100 py-10">
-      <div class="grid grid-cols-12">
-          <div class="col-span-4 max-w-xs rounded-md shadow-md bg-white text-black-100">
-            <img src="image1.jpg" alt="" class="object-cover object-center w-full rounded-t-md h-45 bg-white-500">
-            <div class="flex flex-col justify-between p-6 space-y-8">
-              <div class="space-y-2">
-                <h5 class="text-2xl font-semibold tracki">Premium Self-Publishing</h5>
-                <ul class="ul test-sm">
-                  <li>Print-on-Demand</li>
-                  <li>Worldwide distribution</li>
-                  <li>Author gets 100% profit</li>
-                  <li>Track Sales & Royalties</li>
-                  <li>Author decides the book list price</li>
-                  <li>Author owns the copyright</li>
-                  <li>Author volume discounts</li>
-                  <li>Never go out-of-print</li>
-                  <li>Free & Guided publishing plans</li>
-                </ul>
-              </div>
-              <button type="button" class="flex items-center justify-center w-full p-2 font-semibold tracki rounded-md text-white-900 bg-cyan-400">Learn more</button>
+    <!-- start card1 -->
+    <section class="py-6 sm:py-12 bg-gray-100 text-gray-800">
+      <div class="container p-6 mx-auto space-y-8">
+        <div class="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-4">
+          <article class="flex flex-col bg-white">
+            <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
+              <img alt="" class="object-cover w-full h-40 bg-gray-500" src="image1.jpg">
+            </a>
+            <div class="flex flex-col flex-1 p-6">
+              <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
+              <a rel="noopener noreferrer" href="#" class="text-xs tracki uppercase hover:underline text-cyan-600 font-bold">Premium Self-Publishing</a>
+              <ul class="text-sm">
+                <li>Print on Demand</li>
+                <li>Worldwide Distribution</li>
+                <li>Author gets 100% profit</li>
+                <li>Track Sales & Royalties</li>
+                <li>Author owns the copyright</li>
+                <li>Never go out-of-print</li>
+                <li>Author volume discounts</li>
+              </ul>
+            </div>  
+          </article>
+          <article class="flex flex-col bg-white">
+            <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
+              <img alt="" class="object-cover w-full h-40 bg-gray-500" src="image2.jpg">
+            </a>
+            <div class="flex flex-col flex-1 p-6">
+              <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
+              <a rel="noopener noreferrer" href="#" class="text-xs tracki uppercase hover:underline text-cyan-600 font-bold">Publishing Process</a>
+              <ul class="text-sm">
+                <li>Choose a plan</li>
+                <li>Submit your book details</li>
+                <li>Sign agreement</li>
+                <li>Submit manuscript</li>
+                <li>Book composition done</li>
+                <li>Get your printed copies</li>
+                <li>Book marketing done</li>
+              </ul>
             </div>
-          </div>
-          <div class="col-span-4 max-w-xs rounded-md shadow-md bg-white text-black-100">
-            <img src="image2.jpg" alt="" class="object-cover object-center w-full rounded-t-md h-45 bg-gray-500">
-            <div class="flex flex-col justify-between p-6 space-y-8">
-              <div class="space-y-2">
-                <h5 class="text-2xl font-semibold tracki">Publishing Process</h5>
-                <ul class="ul test-sm">
-                  <li>Choose a plan</li>
-                  <li>Submit your book details </li>
-                  <li>Sign agreement</li>
-                  <li>Submit manuscript</li>
-                  <li>Book composition done </li>
-                  <li>Review the composed book  </li>
-                  <li>Get your printed copies </li>
-                  <li>Book marketing done   </li>
-                  <li>Monitor sales & royalties</li>
-                </ul>
-              </div>
-              <button type="button" class="flex items-center justify-center w-full p-2 font-semibold tracki rounded-md text-white-900 bg-cyan-400">View Process</button>
+          </article>
+          <article class="flex flex-col bg-white">
+            <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
+              <img alt="" class="object-cover w-full h-67 bg-gray-500" src="image3.jpg">
+            </a>
+            <!-- <div class="flex flex-col flex-1 p-6">
+              <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
+            </div> -->
+          </article>
+          <article class="flex flex-col bg-white">
+            <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
+              <img alt="" class="object-cover w-full h-67 bg-gray-500" src="image6.jpg">
+            </a>
+            <div class="flex flex-col flex-1 p-6">
+              <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
             </div>
-          </div>
-          <div class="col-span-4 max-w-xs rounded-md shadow-md bg-white text-black-100">
-            <img src="image3.jpg" alt="" class="object-cover object-center w-full rounded-t-md h-45 bg-gray-500">
-            <div class="flex flex-col justify-between p-6 space-y-8">
-              <button type="button" class="flex items-center justify-center w-full p-2 font-semibold tracki rounded-md text-white-900 bg-cyan-400">View Books</button>
-            </div>
-          </div>
-      </div>
-    </div>
-    <!-- end card -->
-    <!-- start card 2-->
-    <div class="section py-12 bg-slate-200">
-      <div class="grid grid-cols-12"> 
-        <div class="col-span-6 max-w-lg rounded-md shadow-md bg-white text-black-100">
-          <h4 class="italic text-center font-bold pt-4">ScholarGram</h4>
-          <p class="text-center pb-4">-----------</p>
-          <img src="image4.png" alt="" class="object-cover object-center w-full rounded-t-md h-45 bg-gray-500">
-          <div class="flex flex-col justify-between p-6 space-y-8">
-            <div class="space-y-2">
-              <p class="text-justify">ScholarGram is an open and free academic publishing platform developed by White Falcon Publishing. With ScholarGram you can publish your academic and research works such as thesis, dissertations, research papers, project reports, conference proceedings and journals into print and eBooks.</p>
-            </div>
-            <button type="button" class="flex items-center justify-center w-full p-2 font-semibold tracki rounded-md text-white-900 bg-cyan-400">Learn More</button>
-          </div>
-        </div>
-        <div class="col-span-6 max-w-lg rounded-md shadow-md bg-white text-black-100">
-          <h4 class="italic text-center font-bold pt-4">BooksFundr</h4>
-          <p class="text-center pb-4">-----------</p>
-          <img src="image5.png" alt="" class="object-cover object-center w-full rounded-t-md h-45 bg-gray-500">
-          <div class="flex flex-col justify-between p-6 space-y-8">
-            <div class="space-y-2">
-              <p class="text-justify">BooksFundr is India's first crowd-funding platform for books. With BooksFundr, authors can create campaigns for their books and sell pre-orders. The books that meet pre-order goals are published by White Falcon Publishing, without any upfront costs to the author.</p>
-            </div>
-            <button type="button" class="flex items-center justify-center w-full p-2 font-semibold tracki rounded-md text-white-900 bg-cyan-400">Learn More</button>
-          </div>
+          </article>
         </div>
       </div>
+    </section>
+    <!-- end card1 -->
+    <!-- start card2 -->
+    <section class="py-2 sm:py-12 bg-gray-200 text-gray-800">
+      <div class="container p-6 mx-auto space-y-8">
+        <div class="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-6">
+          <!-- Your articles go here -->
+          <article class="flex flex-col bg-white">
+            <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
+              <a class="text-center font-bolder italic text-lg pt-3" href="#">Global Distribution</a>
+              <img alt="" class="object-cover w-full h-58 bg-white pt-4" src="image10.png">
+            </a>
+            <div class="flex flex-col flex-1 p-6">
+              <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
+              <p class="text-justify text-sm text-slate-500 pb-14">We help authors in getting their books published
+                through international self-publishing platforms which offer distribution services and make the titles 
+                available for buyers in India, USA, Canada, Europe, Australia, New Zealand and Japan.</p>
+              <button type="button" class="py-2 bg-cyan-500 text-gray-100">View Distribution Channel</button>            
+            </div>
+          </article>
+    
+          <!-- Repeat the above article structure for each card -->
+          <article class="flex flex-col bg-white">
+            <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
+              <a class="text-center font-bolder italic text-lg pt-3" href="#">Free & Guided Publishing Plans</a>
+              <img alt="" class="object-cover w-full h-58 bg-white pt-4" src="image11.jpg">
+            </a>
+            <div class="flex flex-col flex-1 p-6">
+              <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
+              <p class="text-justify text-sm text-slate-500 pb-5">Wondering how to self publish a book in india? 
+                You can review our publishing plans and choose the plan that best suits your requirements. To get 
+                an accurate estimate for existing plans, please provide us with your book details by completing the 
+                form on the plans page. You can also create your own custom plan. lf-publishing platform and other 
+                international platforms.</p>
+              <button type="button" class="py-2 bg-cyan-500 text-gray-100">Learn More</button>            
+            </div>
+          </article>
+         
+        </div>
+      </div>
+    </section>
+    <!-- end card2 -->
+    <!-- start -->
+    <section class="py-2 bg-gray-100 text-gray-800">
+      <div class="container flex flex-col items-center justify-center p-4 mx-auto space-y-8 sm:p-10">
+        <h1 class="text-2xl italic font-bold leadi text-center">Meet Our Authors from Around the World</h1>
+        <div class="flex flex-row flex-wrap-reverse justify-center">
+          <div class="flex flex-col justify-center m-8 text-center">
+            <img alt="" class="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full bg-gray-500" src="t1.png">
+            <p class="text-xl font-semibold leadi">Dr. Nupur Shah</p>
+            <p class="text-gray-600">Fetal Medicine</p>
+          </div>
+          <div class="flex flex-col justify-center m-8 text-center">
+            <img alt="" class="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full bg-gray-500" src="t7.jpg">
+            <p class="text-xl font-semibold leadi">Tej Pratap Singh</p>
+            <p class="text-gray-600">Army Officer</p>
+          </div>
+          <div class="flex flex-col justify-center m-8 text-center">
+            <img alt="" class="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full bg-gray-500" src="t4.jpg">
+            <p class="text-xl font-semibold leadi">Veena Kapur</p>
+            <p class="text-gray-600">Author</p>
+          </div>
+          <div class="flex flex-col justify-center m-8 text-center">
+            <img alt="" class="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full bg-gray-500" src="t3.png">
+            <p class="text-xl font-semibold leadi">Nila Panda</p>
+            <p class="text-gray-600">Filmmaker</p>
+          </div>
+          <div class="flex flex-col justify-center m-8 text-center">
+            <img alt="" class="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full bg-gray-500" src="t5.jpg">
+            <p class="text-xl font-semibold leadi">Shelly Mishra</p>
+            <p class="text-gray-600">Student</p>
+          </div>
+          <div class="flex flex-col justify-center m-8 text-center">
+            <img alt="" class="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full bg-gray-500" src="t2.jpg">
+            <p class="text-xl font-semibold leadi">Dr. Bhatti</p>
+            <p class="text-gray-600">Architect</p>
+          </div>
+          <div class="flex flex-col justify-center m-8 text-center">
+            <img alt="" class="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full bg-gray-500" src="t6.jpg">
+            <p class="text-xl font-semibold leadi">Dr.V.Srinivas</p>
+            <p class="text-gray-600">Doctor</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end -->
+    <!-- start card3 -->
+    <section class="py-2 sm:py-12 bg-gray-200 text-gray-800">
+      <div class="container p-6 mx-auto space-y-8">
+        <div class="grid grid-cols-1 gap-x-4 gap-y-8 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-6">
+          <!-- Your articles go here -->
+          <article class="flex flex-col bg-gray-50">
+            <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
+              <a class="text-center font-bolder italic text-lg pt-3" href="#">ScholarGram</a>
+              <p class="text-center">------------</p>
+              <a class="text-center text-xs pb-2" href="#">Publish your Academic and Research Works for Free</a>
+              <img alt="" class="object-cover w-full h-52 bg-white" src="image4.png">
+            </a>
+            <div class="flex flex-col flex-1 p-6">
+              <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
+              <p class="text-justify text-sm text-slate-500 pb-5">ScholarGram is an open and free academic publishing platform developed by White Falcon Publishing. With ScholarGram you can publish your academic and research works such as thesis, dissertations, research papers, project reports, conference proceedings and journals into print and eBooks.</p>
+              <button type="button" class="py-2 bg-cyan-500 text-gray-100">Learn More</button>            
+            </div>
+          </article>
+    
+          <!-- Repeat the above article structure for each card -->
+          <article class="flex flex-col bg-gray-50">
+            <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
+              <a class="text-center font-bolder italic text-lg pt-3" href="#">BooksFundr</a>
+              <p class="text-center">-----------</p>
+              <a class="text-center text-xs pb-2" href="#">Crowdfunding Platform for Books</a> 
+              <img alt="" class="object-cover w-full h-52 bg-white" src="image5.png">
+            </a>
+            <div class="flex flex-col flex-1 p-6">
+              <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum"></a>
+              <p class="text-justify text-sm text-slate-500 pb-10">BooksFundr is India's first crowd-funding platform for books. With BooksFundr, authors can create campaigns for their books and sell pre-orders. The books that meet pre-order goals are published by White Falcon Publishing, without any upfront costs to the author.</p>
+              <button type="button" class="py-2 bg-cyan-500 text-gray-100">Learn More</button>            
+            </div>
+          </article>
+         
+        </div>
+      </div>
+    </section>
+    <!-- end card3 -->
+    <!-- start slider -->
+    <div class="section bg-white pt-4">
+      <h1 class="italic text-center text-4xl">Author Dashboard</h1>
+    <div class="carousel w-100">
+      <div id="slide1" class="carousel-item relative w-full">
+        <img src="image7.jpg" class="w-full" />
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide4" class="btn btn-circle">❮</a> 
+          <a href="#slide2" class="btn btn-circle">❯</a>
+        </div>
+      </div> 
+      <div id="slide2" class="carousel-item relative w-full">
+        <img src="image8.jpg" class="w-full" />
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide1" class="btn btn-circle">❮</a> 
+          <a href="#slide3" class="btn btn-circle">❯</a>
+        </div>
+      </div> 
+      <div id="slide3" class="carousel-item relative w-full">
+        <img src="image9.jpg" class="w-full" />
+        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+          <a href="#slide2" class="btn btn-circle">❮</a> 
+          <a href="#slide4" class="btn btn-circle">❯</a>
+        </div>
+      </div> 
     </div>
-    <!-- end card 2-->
+    </div>
+    <!-- end slider -->
+    <!-- start feature -->
+    <section class="py-6 sm:py-12 bg-white text-gray-800">
+      <div class="container p-6 mx-auto space-y-8">
+        <div class="space-y-2 text-center">
+          <h2 class="text-3xl font-bolder italic pb-12">Featured on</h2>
+        </div>
+        <div class="grid grid-cols-1 gap-x-2 gap-y-8 md:grid-cols-6 lg:grid-cols-6 xl:grid-cols-6">
+          <!-- Your articles go here -->
+          <article class="flex flex-col bg-white">
+            <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
+              <img alt="" class="object-cover w-full h-25 bg-white" src="f1.jpg">
+            </a>
+          </article>
+    
+          <!-- Repeat the above article structure for each card -->
+          <article class="flex flex-col bg-white">
+            <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
+              <img alt="" class="object-cover w-21 h-25 bg-white" src="f2.jpg">
+            </a>
+
+          </article>
+          <article class="flex flex-col bg-white">
+            <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
+              <img alt="" class="object-cover w-15 h-9 bg-white" src="f3.jpg">
+            </a>
+
+          </article>
+          <article class="flex flex-col bg-white">
+            <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
+              <img alt="" class="object-cover w-15 h-15 bg-white" src="f4.jpg">
+            </a>
+
+          </article>
+          <article class="flex flex-col bg-white">
+            <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
+              <img alt="" class="object-cover w-15 h-15 bg-white" src="f5.png">
+            </a>
+
+          </article>
+          <article class="flex flex-col bg-white">
+            <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
+              <img alt="" class="object-cover w-15 h-10 bg-white" src="f6.jpg">
+            </a>
+          </article> 
+        </div>
+      </div> 
+        <div class="grid grid-cols-1 gap-x-2 gap-y-8 md:grid-cols-6 lg:grid-cols-6 xl:grid-cols-6">
+          <!-- Your articles go here -->
+          <article class="flex flex-col bg-white">
+            <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
+              <img alt="" class="object-cover w-15 h-10 bg-white" src="">
+            </a>
+          </article>
+    
+          <!-- Repeat the above article structure for each card -->
+          <article class="flex flex-col bg-white">
+            <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
+              <img alt="" class="object-cover w-21 h-12 bg-white" src="f8.png">
+            </a>
+
+          </article>
+          <article class="flex flex-col bg-white">
+            <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
+              <img alt="" class="object-cover w-15 h-15 bg-white" src="f12.jpg">
+            </a>
+
+          </article>
+          <article class="flex flex-col bg-white">
+            <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
+              <img alt="" class="object-cover w-15 h-15 bg-white" src="f10.png">
+            </a>
+
+          </article>
+          <article class="flex flex-col bg-white">
+            <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
+              <img alt="" class="object-cover w-15 h-14 bg-white" src="f9.png">
+            </a>
+
+          </article>
+          <article class="flex flex-col bg-white">
+            <a rel="noopener noreferrer" href="#" aria-label="Te nulla oportere reprimique his dolorum">
+              <img alt="" class="object-cover w-15 h-10 bg-white" src="">
+            </a>
+          </article> 
+        </div>
+    </section>
+    <!-- end feature -->
     <!-- start footer -->
     <footer class="py-6 bg-gray-800 text-gray-50">
       <div class="container px-6 mx-auto space-y-6 divide-y divide-gray-400 md:space-y-12 divide-opacity-50">
@@ -255,7 +473,7 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer> 
     <!-- end footer -->
   </body>
-</html>  
+</html> 
